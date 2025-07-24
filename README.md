@@ -89,7 +89,7 @@ Docker容器管理页面显示所有Docker容器。容器状态使用不同颜�
 如有问题或建议，请通过以下方式联系我们：
 
 - [GitHub Issues](https://github.com/weixin008/SysToolkit/issues)
-- Email: [your-email@example.com](mailto:your-email@example.com)
+- Email: [weixin008@example.com](mailto:weixin008@example.com)
 
 ## 开源协议
 
