@@ -1,0 +1,225 @@
+{
+  "build": {
+    "beforeDevCommand": "npm run dev",
+    "beforeBuildCommand": "npm run build",
+    "devPath": "http://localhost:10086",
+    "distDir": "../dist",
+    "withGlobalTauri": false
+  },
+  "package": {
+    "productName": "SysToolkit",
+    "version": "1.0.0"
+  },
+  "tauri": {
+    "allowlist": {
+      "all": true,
+      "shell": {
+        "all": true,
+        "open": true,
+        "execute": true,
+        "sidecar": true,
+        "scope": [
+          {
+            "name": "cmd",
+            "cmd": "cmd",
+            "args": true
+          },
+          {
+            "name": "powershell",
+            "cmd": "powershell",
+            "args": true
+          },
+          {
+            "name": "ipconfig",
+            "cmd": "ipconfig",
+            "args": true
+          },
+          {
+            "name": "netstat",
+            "cmd": "netstat",
+            "args": true
+          },
+          {
+            "name": "tasklist",
+            "cmd": "tasklist",
+            "args": true
+          },
+          {
+            "name": "taskkill",
+            "cmd": "taskkill",
+            "args": true
+          },
+          {
+            "name": "systeminfo",
+            "cmd": "systeminfo",
+            "args": true
+          },
+          {
+            "name": "wmic",
+            "cmd": "wmic",
+            "args": true
+          },
+          {
+            "name": "ping",
+            "cmd": "ping",
+            "args": true
+          },
+          {
+            "name": "tracert",
+            "cmd": "tracert",
+            "args": true
+          },
+          {
+            "name": "netsh",
+            "cmd": "netsh",
+            "args": true
+          },
+          {
+            "name": "sfc",
+            "cmd": "sfc",
+            "args": true
+          },
+          {
+            "name": "dism",
+            "cmd": "dism",
+            "args": true
+          },
+          {
+            "name": "chkdsk",
+            "cmd": "chkdsk",
+            "args": true
+          },
+          {
+            "name": "defrag",
+            "cmd": "defrag",
+            "args": true
+          },
+          {
+            "name": "explorer",
+            "cmd": "explorer",
+            "args": true
+          },
+          {
+            "name": "start",
+            "cmd": "start",
+            "args": true
+          },
+          {
+            "name": "control",
+            "cmd": "control",
+            "args": true
+          },
+          {
+            "name": "msinfo32",
+            "cmd": "msinfo32",
+            "args": true
+          },
+          {
+            "name": "devmgmt.msc",
+            "cmd": "devmgmt.msc",
+            "args": true
+          },
+          {
+            "name": "diskmgmt.msc",
+            "cmd": "diskmgmt.msc",
+            "args": true
+          },
+          {
+            "name": "services.msc",
+            "cmd": "services.msc",
+            "args": true
+          },
+          {
+            "name": "eventvwr.msc",
+            "cmd": "eventvwr.msc",
+            "args": true
+          },
+          {
+            "name": "taskmgr",
+            "cmd": "taskmgr",
+            "args": true
+          },
+          {
+            "name": "rundll32.exe",
+            "cmd": "rundll32.exe",
+            "args": true
+          },
+          {
+            "name": "mmc",
+            "cmd": "mmc",
+            "args": true
+          }
+        ]
+      },
+      "process": {
+        "all": true
+      },
+      "fs": {
+        "all": true,
+        "scope": ["**"]
+      },
+      "dialog": {
+        "all": true
+      },
+      "notification": {
+        "all": true
+      }
+    },
+    "bundle": {
+      "active": true,
+      "targets": ["msi", "nsis", "deb", "dmg"],
+      "identifier": "com.systoolkit.app",
+      "icon": [
+        "icons/32x32.png",
+        "icons/128x128.png",
+        "icons/128x128@2x.png",
+        "icons/icon.icns",
+        "icons/icon.ico"
+      ],
+
+      "windows": {
+        "certificateThumbprint": null,
+        "digestAlgorithm": "sha256",
+        "timestampUrl": "",
+        "wix": {
+          "language": ["zh-CN"],
+          "template": null
+        },
+        "nsis": {
+          "languages": ["SimpChinese"]
+        }
+      },
+      "macOS": {
+        "entitlements": null,
+        "exceptionDomain": "",
+        "frameworks": [],
+        "providerShortName": null,
+        "signingIdentity": null
+      }
+    },
+    "security": {
+      "csp": null
+    },
+    "updater": {
+      "active": true,
+      "endpoints": [
+        "https://releases.myapp.com/{{target}}/{{arch}}/{{current_version}}"
+      ],
+      "dialog": true,
+      "pubkey": ""
+    },
+    "windows": [
+      {
+        "fullscreen": false,
+        "resizable": true,
+        "title": "SysToolkit",
+        "width": 1200,
+        "height": 800,
+        "minWidth": 800,
+        "minHeight": 600,
+        "center": true,
+        "decorations": true
+      }
+    ]
+  }
+}

@@ -1,0 +1,25 @@
+[package]
+name = "system-monitor"
+version = "0.1.0"
+description = "A user-friendly system monitoring tool"
+authors = ["System Monitor Team"]
+license = "GPL-3.0"
+repository = ""
+default-run = "system-monitor"
+edition = "2021"
+rust-version = "1.60"
+
+[build-dependencies]
+tauri-build = { version = "1.5.0", features = [] }
+
+[dependencies]
+serde_json = "1.0"
+serde = { version = "1.0", features = ["derive"] }
+tauri = { version = "1.5.0", features = [ "api-all", "updater"] }
+sysinfo = "0.30"
+tokio = { version = "1.0", features = ["full"] }
+chrono = "0.4"
+
+[features]
+default = ["custom-protocol"]
+custom-protocol = ["tauri/custom-protocol"]
