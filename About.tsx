@@ -29,7 +29,7 @@ interface AboutProps {
 
 const About: React.FC<AboutProps> = ({ onClose }) => {
   const openGithub = async () => {
-    await open('https://github.com/your-username/system-monitor');
+    await open('https://github.com/weixin008/SysToolkit');
   };
 
   const openLicense = async () => {

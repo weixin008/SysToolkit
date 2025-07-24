@@ -40,7 +40,7 @@
 
 ### 普通用户
 
-1. 从[Releases页面](https://github.com/your-username/system-monitor/releases)下载最新版本
+1. 从[Releases页面](https://github.com/weixin008/SysToolkit/releases)下载最新版本
 2. 运行安装程序，按照向导完成安装
 3. 从开始菜单或桌面快捷方式启动应用
 
@@ -50,8 +50,7 @@
 
 1. 克隆项目并安装依赖
 ```bash
-git clone https://github.com/your-username/system-monitor.git
-cd system-monitor
+git clone https://github.com/weixin008/SysToolkit.git
 npm install
 ```
 
@@ -89,7 +88,7 @@ Docker容器管理页面显示所有Docker容器。容器状态使用不同颜�
 
 如有问题或建议，请通过以下方式联系我们：
 
-- [GitHub Issues](https://github.com/your-username/system-monitor/issues)
+- [GitHub Issues](https://github.com/weixin008/SysToolkit/issues)
 - Email: [your-email@example.com](mailto:your-email@example.com)
 
 ## 开源协议
@@ -111,3 +110,24 @@ GPLv3 是一种强大的 copyleft 许可证，具有以下特点：
 - 您可以修改源代码
 - 如果您分发修改后的版本，必须开源您的修改并使用相同的 GPLv3 许可证
 - 您必须保留原始版权声明
+
+## 关注与支持
+
+### 微信公众号
+
+欢迎关注我的微信公众号，获取更多技术分享和软件更新：
+
+![微信公众号：豆子爱分享](./public/gzh.png)
+
+### 赞赏支持
+
+如果您觉得这个工具对您有帮助，可以扫描下方二维码支持开发者：
+
+![赞赏码](./public/zsm.png)
+
+感谢您的支持！
+
+### 开源贡献
+
+- GitHub: [weixin008](https://github.com/weixin008)
+- 欢迎提交Issue和Pull Request
